@@ -37,4 +37,9 @@ public class MqTest {
         rabbitTemplate.convertAndSend("topictest", "good.log", "主题模式测试");
     }
 
+    @Test
+    public void testTopic4() {
+        rabbitTemplate.convertAndSend("topictest", "good.logs", "主题模式测试");
+    }
+
 }

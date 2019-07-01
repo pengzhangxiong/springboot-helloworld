@@ -7,6 +7,11 @@ public class Student {
     private String age;
     private Date birthday;
 
+    public Student(String name, String age) {
+        this.name = name;
+        this.age = age;
+    }
+
     public Student(String name, String age, Date birthday) {
         this.name = name;
         this.age = age;
