@@ -1,0 +1,27 @@
+server:
+  port: 8080
+
+spring:
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss
+    time-zone: Asia/Shanghai
+  datasource:
+    url: jdbc:mysql://47.98.179.9:33306/test?useUnicode=true&characterEncoding=UTF-8
+    username: root
+    password: 123456
+    driver-class-name: com.mysql.jdbc.Driver
+  redis:
+    host: 192.168.0.204
+    password: 123456
+  rabbitmq:
+    host: 47.98.179.9
+    username: caspar
+    password: 123456
+    virtual-host: my_vhost
+    port: 5672
+
+
+mybatis:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+#    map-underscore-to-camel-case: true #开启驼峰映射
